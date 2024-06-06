@@ -1,0 +1,518 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  
+  line-height: 1.5;
+
+}
+
+p {
+  margin: 10px 0;
+}
+
+i {
+  display: inline;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #010b03; 
+  font-family: "DynaPuff", system-ui;
+  font-weight: 400;
+  
+
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  padding: 2rem;
+}
+
+section > * {
+   margin: 0 auto;
+   max-width: 1000px;
+}
+
+
+#home {
+  background: #fff;
+}
+
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  padding: 1.25rem;
+  font-family: "DynaPuff", system-ui;
+  color: #000000;
+}
+
+.navbar .logo {
+  padding: 1.5rem;
+  font-size: 2rem;
+}
+
+
+.navbar .logo a:hover {
+  color: var(--secondary-color);
+}
+
+.navbar .nav-menu {
+  display: flex;
+}
+
+.nav-menu .nav-item a {
+  position: relative;
+}
+
+.nav-menu .nav-item a {
+  display: inline-block;
+  padding: 1rem 1rem 1rem 1rem;
+  width: 100%;
+  
+}
+
+.nav-menu .nav-item a:hover {
+  background-color: var(--primary-color);
+  color: #000000;
+}
+
+
+.nav-menu .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fbfbfb;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-menu .dropdown-content a {
+  float: none;
+  color: rgb(0, 0, 0);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-menu .dropdown-content a:hover {
+  background-color: #0e780e86;
+ 
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0rem;
+    flex-direction: column;
+    width: 70%;
+    height: 70%;
+    padding: 20px;
+    text-align: right;
+    transition: 0.3s;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    background-color: #fbfbfb;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .close-menu-btn {
+        display: block;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+  .close-menu-btn {
+      display: none;
+      font-size: 0%;
+    
+  }
+}
+  .nav-menu.active {
+    right: 0;
+  }
+
+  .nav-menu li:first-child {
+     margin-top: 4.5rem;
+     border-top: 1px solid #ccc;
+  }
+
+  .nav-item {
+    width: 100%;
+    border-bottom: 1px solid #4b0303;
+  }
+
+  .hamburger {
+    display: block;
+
+  }
+
+}
+
+.close-btn {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+ .close-btn {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+}
+
+
+
+.logo-image{
+  transform: scale(0.6);
+  margin-top: 4%;
+  display: inline-flex;
+  float: left;
+  margin-left: -40%;
+  
+}
+
+h3
+{
+
+  color: rgb(205, 16, 79);
+  font-size: 50px;
+  margin: 3%;
+  font-family: "DynaPuff", system-ui;
+  font-weight: 500;
+  
+  
+}
+
+
+
+ .container{
+display: flex;
+align-items: center;
+justify-content: center;
+color: rgb(53, 23, 2);
+
+ }
+
+
+ .hero1{
+  width: 100%;
+  height: auto;
+  margin-top: 30%;
+ }
+
+ .asger{
+  width: 100%;
+  height: auto;
+ }
+ 
+ p.centertekts{
+
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 15%;
+
+  }
+ 
+  pre.herotekst{
+
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10px;
+    }
+   
+    .fodbold{
+      width: 100%;
+      height: auto;
+      margin-top: 5%;
+
+    }
+
+    p.centertekts1{
+
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      margin: 3%;
+      margin-inline-end: 25%;
+      margin-inline-start: 25%;
+    }
+
+    h4{
+
+      color: rgb(205, 16, 79);
+      font-size: 50px;
+      margin-top: 10%;
+      font-family: "DynaPuff", system-ui;
+      font-weight: 500;
+      text-align: center;
+      
+      
+      
+    }
+    
+    p.centertekts2{
+
+      font-size: 16px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      text-align: center;
+      margin: 4%;
+      margin-inline-end: 25%;
+      margin-inline-start: 25%;
+    }
+
+
+
+
+    .dropdown {
+      float: left;
+      overflow: hidden;
+
+     
+    }
+    
+    .dropdown .dropbtn {
+      font-size: 20px;  
+      border: none;
+      outline: none;
+      color: rgb(30, 153, 5);
+      padding: 14px 16px;
+      background-color: inherit;
+      font-family: inherit;
+      margin: 0;
+      
+      
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #190f8f;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+     
+    }
+    
+    .dropdown-content a {
+      float: none;
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #fbfbfb;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .troeje{
+
+      width: 80%;
+      height: 80%;
+      margin-top: 5%;
+    }
+
+    h5{
+
+      color: rgb(205, 16, 79);
+      font-size: 50px;
+      margin-top: 30%;
+      font-family: "DynaPuff", system-ui;
+      font-weight: 500
+      
+    }
+
+    .omklaedning{
+      width: 80%;
+      height: 80%;
+      margin-top: 5%;
+    }
+
+    .fest{
+      width: 80%;
+      height: 80%;
+      margin-top: 5%;
+    }
+
+    .beerpong{
+      width: 80%;
+      height:80%;
+      margin-top: 5%;
+    }
+
+    h6{
+
+      color: rgb(205, 16, 79);
+      font-size: 50px;
+      margin-top: 65%;
+      font-family: "DynaPuff", system-ui;
+      font-weight: 500
+      
+    }
+
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+     
+    }
+    
+    .ipa2 {
+      max-width: 25%;
+      max-height:15%;
+      float: left;
+    
+    }
+    
+    .ipa3 {
+      font-size: 18px;
+      padding-left: 20px;
+      padding-top: 20%;
+      float: left;
+    }
+
+
+
+
+    
+
+    .container2 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+      max-width: 2500px; 
+      margin: 50px auto; 
+  }
+  
+  .item2 {
+      display: flex;
+      flex-direction: row; 
+      align-items: center;
+      margin-bottom: 20px;
+  }
+  
+  .ipa5 {
+      width: 45%; 
+      height: auto;
+      margin-right: 10px;
+  }
+  
+  .ipatekst {
+      flex: 1; 
+      margin-left: 2px; 
+      font-size: 14px;
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+  }
+
+ h2
+ {
+  color: rgb(205, 16, 79);
+  font-size: 50px;
+  font-family: "DynaPuff", system-ui;
+  font-weight: 500;
+  margin-left: 30%;
+  margin-top: 15%;
+  text-align: center;
+ }
+  @media (max-width: 768px) {
+      .item2 {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+      .item2 img {
+          margin-right: 0;
+          margin-bottom: 10px;
+      }
+  
+      .ipatekst {
+          text-align: center; 
+      }
+  }
+
+
+  .button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    font-size: 16px;
+    margin: 20%;
+    cursor: pointer;
+  }
+
+  
+
+  .close-menu-btn {
+    padding: 10px 20px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    font-family: "DynaPuff", system-ui;
+    color: rgb(205, 16, 79);
+    background-color: #fbfbfb;
+}
